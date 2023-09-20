@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내부 스크립트-박정수</title>
+</head>
+<body>
+    <h1>새로고침하시오</h1>
+
+    <script>
+        function random(number){
+            return Math.floor(Math.random()*number);
+        }
+
+        function bgChange(){
+            const rdnCo1 = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) +')';
+            document.body.style.backgroundColor = rdnCo1;
+        }
+
+        bgChange(); 
+    </script>
+</body>
+</html>
